@@ -1,0 +1,3 @@
+command: cvt 800 480 60
+# 800x480 59.48 Hz (CVT) hsync: 29.74 kHz; pclk: 29.50 MHz
+Modeline "800x480_60.00"   29.50  800 824 896 992  480 483 493 500 -hsync +vsync

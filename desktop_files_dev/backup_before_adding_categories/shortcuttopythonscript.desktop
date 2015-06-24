@@ -1,0 +1,17 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=ShortcutToPythonScript
+Name[C]=ShortcutToPythonScript
+#Icon=konsole
+Icon=/home/linaro/Desktop/StephaneAG_dev/python_pygame_dev/appicon48.png
+# the following is closed right after execution but works without the terminal=true launched via dblclick
+# auto-closing problem .. now trying to init the python script from a bash script ..
+#Exec=lxterminal -e "/home/linaro/Desktop/StephaneAG_dev/python_pygame_dev/pygame_test.py"
+Exec=lxterminal -e "/home/linaro/Desktop/StephaneAG_dev/python_pygame_dev/open_from_desktop_launcher.sh"
+# using "$SHELL" at the end of the script to prevent auto-close is needed for apps displaying stuff ..
+#Exec=lxterminal -e "bash /home/linaro/Desktop/StephaneAG_dev/play_mario_theme_intro_dev_null_noclose.sh"
+Comment[C]=play the mario 8bit intro theme
+#Terminal=true
+StartupNotify=true

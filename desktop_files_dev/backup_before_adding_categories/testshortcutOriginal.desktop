@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=ShortcutTestOriginal
+Name[C]=ShortcutTestOriginal
+Exec=/home/linaro/Desktop/StephaneAG_dev/play_mario_theme_intro_dev_null.sh
+Comment[C]=play the mario 8bit intro theme
+StartupNotify=true

@@ -1,0 +1,29 @@
+
+TEST 1:
+COMMAND RAN:
+./configure -embedded arm -xplatform qws/linux-arm-g++ -little-endian -opensource -v
+
+VERBOSE OUTPUT:
+Determining system architecture... (Linux:3.0.57+:armv7l)
+    ARM (arm)
+    'arm' is supported
+System architecture: 'arm'
+Host architecture: 'arm'
+Precompiled-headers support disabled.
+/home/linaro/Desktop/StephaneAG_dev/QtEsrc/qt-everywhere-opensource-src-4.8.5/config.tests/unix/fvisibility.test: 28: /home/linaro/Desktop/StephaneAG_dev/QtEsrc/qt-everywhere-opensource-src-4.8.5/config.tests/unix/fvisibility.test: arm-linux-g++: not found
+Symbol visibility control disabled.
+
+
+TEST 2 :
+COMMAND RAN:
+./configure -embedded arm -xplatform qws/linux-arm-g++ -little-endian -host-little-endian -no-pch -opensource -v
+
+VERBOSE OUTPUT:
+Determining system architecture... (Linux:3.0.57+:armv7l)
+    ARM (arm)
+    'arm' is supported
+System architecture: 'arm'
+Host architecture: 'arm'
+/home/linaro/Desktop/StephaneAG_dev/QtEsrc/qt-everywhere-opensource-src-4.8.5/config.tests/unix/fvisibility.test: 28: /home/linaro/Desktop/StephaneAG_dev/QtEsrc/qt-everywhere-opensource-src-4.8.5/config.tests/unix/fvisibility.test: arm-linux-g++: not found
+Symbol visibility control disabled.
+

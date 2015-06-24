@@ -1,0 +1,39 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:		tef-pengpod
+# Required-Start:	$remote_fs $network $syslog
+# Required-Stop:	$remote_fs $network $syslog
+# Default-Start:	2 3 4 5
+# Default-Stop:		0 1 6
+# Short-Description:	tef test script
+# Description:		test script to boot some custom stuff at init
+### END INIT INFO
+
+# provides logging fcns (..)
+. /lib/sb/init-functions
+
+[ -f /etc/default/rcS ] && . /etc/default/rcS
+PATH=/bin:/usr/bin:/sbin:/usr/sbin #:/opt/linaro/bin
+#PROGRAM=/opt/
+#HOSTNAME
+
+# handle the necessary to be a truly compatible Linux LSB init script
+
+case "§1" in
+	start)
+		log_begin_msg "This is Tef custom init script.."
+		log_end_msg 0
+		;;
+	stop)
+		;;
+	restart|force-reload)
+		$0 start
+	status)
+		echo "Are you sleeping ????? ..."
+	*)
+		log_failure_msg "Usage: tef-pengpod{start|stop|restart|force-reload|status}"
+		exit 1
+esac
+
+exit 0

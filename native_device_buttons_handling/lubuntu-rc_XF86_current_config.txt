@@ -1,0 +1,10 @@
+    <keybind key="XF86Search"><action name="Execute"><command>lxterminal</command></action></keybind>
+    <keybind key="XF86MenuKB"><action name="Execute"><command>quickvk</command></action></keybind><!-- Keybindings for desktop switching -->
+    <keybind key="XF86AudioRaiseVolume">
+    <keybind key="XF86AudioLowerVolume">
+    <keybind key="XF86AudioMute">
+    <keybind key="XF86WWW">
+    <keybind key="XF86Terminal">
+    <keybind key="XF86Calculator">
+    <keybind key="XF86MyComputer">
+    <keybind key="XF86PowerOff">

@@ -1,0 +1,15 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=ShortcutWithTerminal
+Name[C]=ShortcutWithTerminal
+Icon=konsole
+# the following is closed right after execution but works without the terminal=true launched via dblclick
+#Exec=lxterminal -e "bash /home/linaro/Desktop/StephaneAG_dev/play_mario_theme_intro_dev_null.sh"
+# using "$SHELL" at the end of the script to prevent auto-close is needed for apps displaying stuff ..
+Exec=lxterminal -e "bash /home/linaro/Desktop/StephaneAG_dev/play_mario_theme_intro_dev_null_noclose.sh"
+Comment[C]=play the mario 8bit intro theme
+#Terminal=true
+StartupNotify=true
+Categories=Utility
